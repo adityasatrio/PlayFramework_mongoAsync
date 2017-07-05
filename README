@@ -1,12 +1,14 @@
-This is your new Play application
+Sample Play application + Mongo Async Driver
 =================================
 
-This file will be packaged with your application when using `activator dist`.
-
-There are several demonstration files available in this template.
+CRUD application using mongo async driver
 
 Controllers
 ===========
+
+- CustomerController.java
+
+  CRUD rest end point
 
 - HomeController.java:
 
@@ -21,8 +23,17 @@ Controllers
   Shows how to inject a component into a controller and use the component when
   handling requests.
 
+
 Components
 ==========
+
+- ModuleDao.java & ModuleService.java
+
+  DI injection for service and DAO, in DAO you can see mongo Async implementation for CRUD
+
+- MongoAsync.java, MongoAsyncImpl.java & MongoClientProvider.java
+
+  mongo async driver implementation (go to application.conf for change DB configuration)
 
 - Module.java:
 
